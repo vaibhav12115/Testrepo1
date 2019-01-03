@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Referral Configuration{% endblock %}
+{% block head %}Referral Configuration
+{% endblock %}
+{% block content %}
+    <form method="" action="/home/ReferralConfig/ReferralConfigVal/">{% csrf_token %}
+        <table border="0">
+            {{ form0.as_table }}
+
+        </table>
+
+        <input type="submit" value="Get Value" />
+    </form>
+    <a href="/home/">Go to Home</a>
+
+{% endblock %}

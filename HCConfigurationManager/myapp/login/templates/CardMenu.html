@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Card Menu{% endblock %}
+{% block head %}Card Menu{% endblock %}
+{% block content %}
+    <p>Welcome {{ user.username }} !!!</p>
+     <a href="/home/CardMenu/Addcard/">1. Add a new Ondemand card</a> <br>
+     <a href="/home/CardMenu/Modifycard/">2. Modify an Ondemand card<br></a>
+    <a href="/home/">Go to Home</a>
+{% endblock %}

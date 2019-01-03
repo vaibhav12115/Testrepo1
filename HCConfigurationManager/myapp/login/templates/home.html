@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Welcome to Helpchat Configuration{% endblock %}
+{% block head %}Welcome to Helpchat Configuration{% endblock %}
+{% block content %}
+    <p>Welcome {{ user.username }} {{lala}} !!!</p>
+     <a href="/home/CardMenu/">{{ondemandfeeds}}</a>&nbsp
+     <a href="/home/AndroidGrid/">{{androidgrid}}</a>&nbsp
+     <a href="/home/iOSGrid/">{{iosgrid}} </a>&nbsp
+     <a href="/home/ReferralConfig/">{{referral}}<br><br></a>
+    <a href="/logout/">Logout</a>
+{% endblock %}

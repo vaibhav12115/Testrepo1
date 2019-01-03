@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Modify an OnDemand card{% endblock %}
+{% block head %}Modify an OnDemand card
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <script src="{{ STATIC_URL }}js/bootstrap.js"></script>
+{{ form.media }}
+
+{% endblock %}
+{% block content %}
+    <form method="" action="/home/CardMenu/Modifycard/Modifycarddetails/">{% csrf_token %}
+        <table border="0">
+            {{ form0.as_table }}
+        </table>
+        <input type="submit" value="GET DETAILS" />
+    </form>
+
+    </form>
+    <a href="/home/">DISCARD</a>
+
+{% endblock %}
